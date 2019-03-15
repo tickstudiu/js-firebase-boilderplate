@@ -23,8 +23,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/report.html">Report</a>
+            <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="/report.html">Report</a>
             <a class="nav-item nav-link" href="https://github.com/tickstudiu/js-firebase-boilderplate">Github</a>
           </div>
         </div>
@@ -33,7 +33,37 @@
 
     <!-- main -->
     <div class="container">
-      test
+      <form class="mt-4">
+        <div class="form-group">
+          <h5 class="text-uppercase">filter</h5>
+          <select class="form-control" id="select">
+            <option>-- select date --</option>
+            <option value="14-03-2019">14-03-2019</option>
+            <option value="15-03-2019">15-03-2019</option>
+            <option value="16-03-2019">16-03-2019</option>
+          </select>
+        </div>
+      </form>
+
+      <table class="table">
+        <h5 class="text-uppercase">table of data</h5>
+        <thead class="text-uppercase">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">data 1</th>
+            <th scope="col">data 2</th>
+            <th scope="col">data 3</th>
+            <th scope="col">data 4</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          <!-- Fetch Data -->
+
+          <!-- If database haven't data in database will show text that 'no data' in first colum -->
+          <tr>
+            <th>no data</th>
+          </tr>
+      </table>
     </div>
 
     <footer>
@@ -51,9 +81,6 @@
 
     <!-- Config, function to fetch data from server -->
     <script src="./config.js"></script>
-    <script src="./assets/fetch.js"></script>
-
-    <!-- Control graph -->
-    <script src="./assets/graph.js"></script>
+    <script src="./assets/genReport.js"></script>
   </body>
 </html>
