@@ -27,7 +27,16 @@ Then set the firebase rules to true, read and write.
   }
 }
 ```
-
+Then try to create a database in firebase as shown in the example.
+```
+NameDatabase
+  \_ data
+        \_ key
+            \_ data1: "data1"
+            \_ data2: "data2"
+            \_ data3: "data3"
+            \_ data7: "data4"
+```
 
 ## Issues
 Now cannot show 2 graphs at the same time.
