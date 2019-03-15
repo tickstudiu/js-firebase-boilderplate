@@ -42,5 +42,5 @@ NameDatabase
 Now **cannot** show 2 graphs at the same time.
 
 ## Credits
-chart: https://redstapler.co/javascript-realtime-chart-plotly/
-bootstrap: https://getbootstrap.com/
+- chart: https://redstapler.co/javascript-realtime-chart-plotly/
+- bootstrap: https://getbootstrap.com/
