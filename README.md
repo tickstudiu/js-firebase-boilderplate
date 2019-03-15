@@ -18,3 +18,19 @@ var config = {
 };
 firebase.initializeApp(config);
 ```
+Then set the firebase rules to true, read and write.
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+
+
+## Issues
+Now cannot show 2 graphs at the same time.
+
+## Credits
+https://redstapler.co/javascript-realtime-chart-plotly/
