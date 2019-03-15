@@ -35,7 +35,7 @@ NameOfDatabase
             \_ data1: "data1"
             \_ data2: "data2"
             \_ data3: "data3"
-            \_ data7: "data4"
+            \_ data4: "data4"
 ```
 
 ## Issues
