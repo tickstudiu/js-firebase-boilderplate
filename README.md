@@ -18,7 +18,7 @@ var config = {
 };
 firebase.initializeApp(config);
 ```
-Then set the firebase rules to true, read and write.
+Then set the firebase **rules to true**, read and write.
 ```
 {
   "rules": {
@@ -39,7 +39,7 @@ NameDatabase
 ```
 
 ## Issues
-Now cannot show 2 graphs at the same time.
+Now **cannot** show 2 graphs at the same time.
 
 ## Credits
 chart: https://redstapler.co/javascript-realtime-chart-plotly/
