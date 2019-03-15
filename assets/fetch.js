@@ -1,3 +1,21 @@
+// Get date today
+function getToday(){
+  const today = new Date();
+
+  let dd = today.getDate();
+  let mm = today.getMonth() + 1; //January is 0!
+  let yyyy = today.getFullYear();
+
+  if (dd < 10) {
+    dd = '0' + dd;
+  }
+  if (mm < 10) {
+    mm = '0' + mm;
+  }
+
+  return dd + '-' + mm + '-' + yyyy;
+}
+
 // Position that would like the information to be displayed
 const table = $('#table');
 
@@ -6,7 +24,7 @@ const dbRoot = firebase.database().ref();
 
 // Create a reference variable to the location on the server named logDHT.
 // And let it sort data from 15 transection from the bottom of the data.
-const dbRefLog = dbRoot.child('data').limitToLast(15);
+const dbRefLog = dbRoot.child(getToday()).limitToLast(15);
 
 // Declare variables to send to other files.
 var graphData;
@@ -25,7 +43,7 @@ dbRefLog.on('value', function(res){
     let data1 = data.val().data1;
     let data2 = data.val().data2;
     let data3 = data.val().data3;
-    let data1 = data.val().data4;
+    let data4 = data.val().data4;
 
     // Enter the value in the display table. And store the value into the variable so that the graph is displayed again.
     table.append("<tr><th scope='row'>" + key + "</th><td>" + data1 + "</td><td>" + data2 + "</td><td>" + data3 + "</td><td>" + data4 + "</td></tr>")
