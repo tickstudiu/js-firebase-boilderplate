@@ -6,7 +6,7 @@ const dbRoot = firebase.database().ref();
 
 // Create a reference variable to the location on the server named logDHT.
 // And let it sort data from 15 transection from the bottom of the data.
-const dbRefLog = dbRoot.child('logDHT').limitToLast(15);
+const dbRefLog = dbRoot.child('data').limitToLast(15);
 
 // Declare variables to send to other files.
 var graphData;
