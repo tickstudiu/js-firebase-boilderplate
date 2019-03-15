@@ -29,6 +29,6 @@ dbRefLog.on('value', function(res){
 
     // Enter the value in the display table. And store the value into the variable so that the graph is displayed again.
     table.append("<tr><th scope='row'>" + key + "</th><td>" + data1 + "</td><td>" + data2 + "</td><td>" + data3 + "</td><td>" + data4 + "</td></tr>")
-    graphData = temperature;
+    graphData = data1;
   });
 });
